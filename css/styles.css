@@ -1,0 +1,118 @@
+body {
+ background-color: #F5F5F5;
+ font-family: Roboto,sans-serif;
+ color: #757575;}
+.list {list-style: none;}
+
+/* Logotip */
+.logo{
+   font-family:'Releway';
+   /* font-style: normal,
+    це дефолтне значення */
+   font-style: normal;
+   font-weight: 700;
+   font-size: 26px;
+   line-height: 31px;
+   /* Висота рядка (властивість line-height) всіх текстових елементів
+    точно відповідає значенням з макета і задана як множник,
+    а не в px. */
+   letter-spacing: 0,03em;
+   color:#2196F3;}
+   .logo-heder{
+    color: #000000;
+   }
+   /* Site nav */
+   .site-nav .link{
+   color:#212121;}
+ .site-nav .link:hover,
+ .site-nav .link:focus{
+ color:#2196F3;
+ }
+ 
+ .site-nav .link-current{
+  color: #fff000;
+ }
+ /* Мило-телефон */
+  .test .link{ color: #757575;}
+  .test .link:hover,
+  .test .link:focus {
+   color: #2196F3;
+  }
+/* Герой */
+.hiro{
+background-color: #2F303A;
+position: absolute;
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+}
+.hiro-titel{color: #FFFFFF;}
+/* Секция */
+.section-titel{
+ color: #212121;
+}
+/* Особливості */
+.feature-list .titel{
+color: #212121;
+}
+/* Кнопка */
+.button{
+  background-color: #2196F3;
+  color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+   border-radius: 4px;
+}
+.button:hover,
+.button:focus{
+  background-color: #188CE8;}
+
+  /* Подвал */
+  .logo-footer {
+      font-family: 'Releway';
+      /* font-style: normal,
+      це дефолтне значення */
+      font-style: normal;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 31px;
+      /* Висота рядка (властивість line-height) всіх текстових елементів
+      точно відповідає значенням з макета і задана як множник,
+      а не в px. */
+      letter-spacing: 0, 03em;
+      color: #2196F3;
+    }
+    .logo-footer {
+      color: #FFFFFF;
+    }
+  .page-footer {
+    color: #212121;
+  }
+  .page .link {
+      color: #d5c9c9;
+  }
+    .page .link:hover,
+    .page .link:focus {
+      color: #2196F3;
+    }
+    .page .test {
+      color: rgba(255, 255, 255, 0.6);
+    }
+    .page .test:hover,
+    .page .test:focus {
+      color: #2196F3;
+    }
+  
+/*цвет тел.на главной-#757575*/
+/*цвет hover - #2196F3*/
+/* цвет кнопки Актив-#188CE8 */
+/* цвет кнопки - #2196F3*/
+/*цвет основного текста #212121*/
+/*цвет второстепенного текста #757575*/
+/*цвет "Studio" на главной- #000000*/
+/* цвет основной-#F5F5F5 */
+/*цвет белого текста-#FFFFFF*/
+/*цвет почты,тел. в хедер-color: rgba(255, 255, 255, 0.6); #ffffff 60%*/
+/* цвет шапки -2F303A */
+/*цвет фона Наша ком.-F5F4FA*/
+ /*цвет футера - 2F303A  */
