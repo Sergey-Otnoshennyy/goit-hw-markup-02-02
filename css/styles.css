@@ -39,15 +39,15 @@ body {
    color: #2196F3;
   }
 /* Герой */
-.hiro{
+.hero{
 background-color: #2F303A;
 position: absolute;
-  width: 1600px;
-  height: 600px;
-  left: 0px;
-  top: 80px;
+  width: 1600;
+  height: 600;
+  left: 0;
+  top: 80;
 }
-.hiro-titel{color: #FFFFFF;}
+.hero-titel{color: #FFFFFF;}
 /* Секция */
 .section-titel{
  color: #212121;
@@ -60,13 +60,23 @@ color: #212121;
 .button{
   background-color: #2196F3;
   color: #FFFFFF;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-   border-radius: 4px;
+  position: absolute;
+  Width: 216;
+  Height: 50;
+  Top: 430;
+  Left: 692;
+  Radius: 4px; 
 }
 .button:hover,
-.button:focus{
-  background-color: #188CE8;}
-
+.button:focus {background-color: #188CE8;}
+/* Кнопка-Фільтр */
+.filter-button{
+background-color: #F5F4FA;
+  color:#212121;
+}
+.filter-button:hover,
+.filter-button :focus{background-color: #2196F3;
+  color: #FFFFFF;}
   /* Подвал */
   .logo-footer {
       font-family: 'Releway';
