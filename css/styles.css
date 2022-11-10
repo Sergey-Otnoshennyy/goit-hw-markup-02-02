@@ -4,18 +4,17 @@ body {
  color: #757575;}
 .list {list-style: none;}
 
-/* Logotip */
+/* -------Logotip-------- */
 .logo{
    font-family:'Releway';
    /* font-style: normal,
     це дефолтне значення */
-   font-style: normal;
    font-weight: 700;
    font-size: 26px;
-   line-height: 31px;
+   line-height: 1,19;
    /* Висота рядка (властивість line-height) всіх текстових елементів
     точно відповідає значенням з макета і задана як множник,
-    а не в px. */
+    а не в px. ( 31 ділемо на 26 = 1,19) */
    letter-spacing: 0,03em;
    color:#2196F3;}
    .logo-heder{
