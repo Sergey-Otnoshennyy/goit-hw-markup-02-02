@@ -1,11 +1,24 @@
+:root {
+--primary-text-color:#757575;
+--titel-text-color: #212121;
+--accent-color: #2196F3;
+--primary-bg-color: #F5F4FA;
+/*heder, #000000 */
+/* hero-background-color: #2F303A, */
+/*hero-titel,titel, #FFFFFF */
+/* footer, 2F303A */
+}
 body {
- background-color: #F5F5F5;
+ background-color: #FFFFFF;
  font-family: Roboto,sans-serif;
- color: #757575;}
+ font-size: 14px;
+ letter-spacing: 0,03em;
+ color: var(--primary-text-color);
+}
 .list {list-style: none;}
 
 /* -------Logotip-------- */
-.logo{
+.logo {
    font-family:'Releway';
    /* font-style: normal,
     це дефолтне значення */
@@ -16,40 +29,43 @@ body {
     точно відповідає значенням з макета і задана як множник,
     а не в px. ( 31 ділемо на 26 = 1,19)або calc(31/26) */
    letter-spacing: 0,03em;
-   color:#2196F3;}
-   .logo-heder{
+   color:var(--accent-color);
+  }
+   .logo-heder {
     color: #000000;
    }
 
    /*------- Site nav------ */
-   .site-nav .link{
+   .site-nav .link {
     font-weight: 500;
       font-size: 14px;
       line-height: 1.33;
       letter-spacing: 0.02em;
-   color:#212121;}
+   color: var(--titel-text-color);
+  }
  .site-nav .link:hover,
- .site-nav .link:focus{
- color:#2196F3;
+ .site-nav .link:focus  {
+ color:var(--accent-color);
  }
- .link{
+ .link {
   text-decoration: none;
  }
  
- .site-nav .link-current{
+ .site-nav .link-current {
   color: #fff000;
  }
 
  /* -----------Мило-телефон------------ */
-  .test .link{
+  .test .link {
       font-weight: 500;
       font-size: 14px;
       line-height: 1.33;
       letter-spacing: 0.02em;
-      color: #757575;}
+      color: var(--primary-text-color);
+    }
   .test .link:hover,
   .test .link:focus {
-   color: #2196F3;
+   color: var(--accent-color);
   }
 
 /* ------------Герой------------- */
@@ -68,12 +84,13 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF; }
+  color: #FFFFFF;
+}
 
   /* -----------Кнопка--------- */
 .button {
-    background-color: #2196F3;
-    border: 1px solid #2196F3;
+    background-color:var(--accent-color);
+    border: 1px solid var(--accent-color);
     color: #FFFFFF;
     font-family: inherit;
   /*width: 216px;
@@ -91,51 +108,52 @@ body {
 
 
 /* --------Секція-Особливоті-----------*/
-.section-titel{
-font-weight: 700;
+.section {
+  background-color: var(--primary-bg-color);
+/* font-weight: 700; */
   font-size: 14px;
   line-height: calc(16/14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
- color: #212121;
+ color: var(--titel-text-color);
 }
 .section-sub-titel {
-font-weight: 400;
+/* font-weight: 400; */
   font-size: 14px;
   line-height: calc(24/14);
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 /* --------Особливості-h2--------- */
 .titel {
-  font-weight: 700;
+  /* font-weight: 700; */
     font-size: 36px;
     line-height: calc(42/36);
     text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--titel-text-color);
   }
   /*--------Особливості-h3---------- */
 .section-descroption {
-  font-weight: 500;
+  /* font-weight: 500; */
   font-size: 16px;
   line-height: calc(19/16);
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--titel-text-color);
 }
 /*---------Особливості-<p>----------- */
-.section-text{
-  font-weight: 400;
+.section-text {
+  /* font-weight: 400; */
     font-size: 16px;
     line-height: calc(19/16);
     /* text-align: center; */
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--primary-text-color);
 }
 
   /* -----------Підвал---------- */
-  .footer{
-      background-color: #2F303A;
+  .footer {
+      background-color: 2F303A;
       width: 1600px;
       height: 252px;
       left: 0px;
@@ -157,36 +175,35 @@ font-weight: 400;
   }
     .page .link:hover,
     .page .link:focus {
-      color: #2196F3;
+      color: var(--accent-color);
     }
     .page .test {
       color: rgba(255, 255, 255, 0.6);
     }
     .page .test:hover,
     .page .test:focus {
-      color: #2196F3;
+      color: var(--accent-color);
     }
 
     /* -----ПОРТФОЛІО------ */
+    /* -----Прихований<h1>---- */
+.visuallyhidden {
+  position: absolute;
 
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
   /* ------Кнопка-Фільтр-Портфоліо------*/
 .filter-button {
   background-color: #F5F4FA;
-  color:#212121;
+  color: var(--titel-text-color);
 }
 .filter-button:hover,
-.filter-button :focus {background-color: #2196F3;
+.filter-button :focus {background-color: var(--accent-color);
   color: #FFFFFF;}
-/*цвет тел.на главной-#757575*/
-/*цвет hover - #2196F3*/
-/* цвет кнопки Актив-#188CE8 */
-/* цвет кнопки - #2196F3*/
-/*цвет основного текста #212121*/
-/*цвет второстепенного текста #757575*/
-/*цвет "Studio" на главной- #000000*/
-/* цвет основной-#F5F5F5 */
-/*цвет белого текста-#FFFFFF*/
-/*цвет почты,тел. в хедер-color: rgba(255, 255, 255, 0.6); #ffffff 60%*/
-/* цвет шапки -2F303A */
-/*цвет фона Наша ком.-F5F4FA*/
- /*цвет футера - 2F303A  */
