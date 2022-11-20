@@ -3,10 +3,12 @@
 --titel-text-color: #212121;
 --accent-color: #2196F3;
 --primary-bg-color: #F5F4FA;
-/*heder, #000000 */
-/* hero-background-color: #2F303A, */
-/*hero-titel,titel, #FFFFFF */
-/* footer, 2F303A */
+--heder-color: #000000;
+--hero-footer-bg-color: #2F303A;
+--titel-color: #FFFFFF;
+--address-colore: rgba(255, 255, 255, 0.6);
+--button-bg-colore: #188CE8;
+--presence-colore: #a55513;
 }
 body {
  background-color: #FFFFFF;
@@ -29,10 +31,10 @@ body {
     точно відповідає значенням з макета і задана як множник,
     а не в px. ( 31 ділемо на 26 = 1,19)або calc(31/26) */
    letter-spacing: 0,03em;
-   color:var(--accent-color);
+   color: var(--accent-color);
   }
    .logo-heder {
-    color: #000000;
+    color: var(--heder-color);
    }
 
    /*------- Site nav------ */
@@ -52,7 +54,7 @@ body {
  }
  
  .site-nav .link-current {
-  color: #fff000;
+  color: var(--presence-colore);
  }
 
  /* -----------Мило-телефон------------ */
@@ -70,7 +72,7 @@ body {
 
 /* ------------Герой------------- */
 .hero {
-  background-color: #2F303A;
+  background-color: var(--hero-footer-bg-color);
   /* position: absolute; 
   width: 1600;
   height: 600;
@@ -84,14 +86,14 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--titel-color);
 }
 
   /* -----------Кнопка--------- */
 .button {
     background-color:var(--accent-color);
     border: 1px solid var(--accent-color);
-    color: #FFFFFF;
+    color: var(--titel-color);
     font-family: inherit;
   /*width: 216px;
   height: 50px;
@@ -104,12 +106,15 @@ body {
     cursor: pointer;
 }
 .button:hover,
-.button:focus {background-color: #188CE8;}
+.button:focus {background-color:(--button-bg-colore);}
 
 
 /* --------Секція-Особливоті-----------*/
-.section {
-  background-color: var(--primary-bg-color);
+.section-command {
+background-color:var(--primary-bg-color);
+}
+.section-titel {
+  /* background-color: var(--primary-bg-color); */
 /* font-weight: 700; */
   font-size: 14px;
   line-height: calc(16/14);
@@ -153,7 +158,7 @@ body {
 
   /* -----------Підвал---------- */
   .footer {
-      background-color: 2F303A;
+      background-color: var(--hero-footer-bg-color);
       width: 1600px;
       height: 252px;
       left: 0px;
@@ -167,18 +172,18 @@ body {
       font-size: 26px;
       line-height: 31px;
       letter-spacing: 0, 03em;
-      color: #FFFFFF;
+      color: var(--titel-color);
     }
   
   .page .link {
-      color: #d5c9c9;
+      color: var(--titel-color);
   }
     .page .link:hover,
     .page .link:focus {
       color: var(--accent-color);
     }
     .page .test {
-      color: rgba(255, 255, 255, 0.6);
+      color: var(--address-colore);
     }
     .page .test:hover,
     .page .test:focus {
@@ -201,9 +206,9 @@ body {
 }
   /* ------Кнопка-Фільтр-Портфоліо------*/
 .filter-button {
-  background-color: #F5F4FA;
+  background-color: var(--primary-bg-color);
   color: var(--titel-text-color);
 }
 .filter-button:hover,
 .filter-button :focus {background-color: var(--accent-color);
-  color: #FFFFFF;}
+  color: var(--titel-color);}
