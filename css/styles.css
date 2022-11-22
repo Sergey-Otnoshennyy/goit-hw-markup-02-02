@@ -8,29 +8,24 @@
 --titel-color: #FFFFFF;
 --address-colore: rgba(255, 255, 255, 0.6);
 --button-bg-colore: #188CE8;
---presence-colore: #a55513;
+--presence-colore: #042cad;
 }
 body {
- background-color: #FFFFFF;
+ background-color: var(--titel-color);
  font-family: Roboto,sans-serif;
  font-size: 14px;
- letter-spacing: 0,03em;
+ letter-spacing: 0.03em;
  color: var(--primary-text-color);
 }
 .list {list-style: none;}
 
 /* -------Logotip-------- */
 .logo {
-   font-family:'Releway';
-   /* font-style: normal,
-    це дефолтне значення */
+   font-family:"Raleway";
    font-weight: 700;
    font-size: 26px;
-   line-height: 1,19;
-   /* Висота рядка (властивість line-height) всіх текстових елементів
-    точно відповідає значенням з макета і задана як множник,
-    а не в px. ( 31 ділемо на 26 = 1,19)або calc(31/26) */
-   letter-spacing: 0,03em;
+   line-height: 1.19;
+   letter-spacing: 0.03em;
    color: var(--accent-color);
   }
    .logo-heder {
@@ -40,7 +35,7 @@ body {
    /*------- Site nav------ */
    .site-nav .link {
     font-weight: 500;
-      font-size: 14px;
+      /* font-size: 14px; */
       line-height: 1.33;
       letter-spacing: 0.02em;
    color: var(--titel-text-color);
@@ -60,7 +55,7 @@ body {
  /* -----------Мило-телефон------------ */
   .test .link {
       font-weight: 500;
-      font-size: 14px;
+      /* font-size: 14px; */
       line-height: 1.33;
       letter-spacing: 0.02em;
       color: var(--primary-text-color);
@@ -73,11 +68,6 @@ body {
 /* ------------Герой------------- */
 .hero {
   background-color: var(--hero-footer-bg-color);
-  /* position: absolute; 
-  width: 1600;
-  height: 600;
-  left: 0;
-  top: 80;*/
 }
 .hero-titel {
   font-weight: 900;
@@ -88,22 +78,20 @@ body {
   text-transform: uppercase;
   color: var(--titel-color);
 }
-
   /* -----------Кнопка--------- */
 .button {
     background-color:var(--accent-color);
     border: 1px solid var(--accent-color);
     color: var(--titel-color);
     font-family: inherit;
-  /*width: 216px;
-  height: 50px;
-  left: 692px;
-  top: 430px;*/
      font-weight: 700; 
     font-size: 16px;
     line-height: 1.87;
-    text-transform: uppercase;
     cursor: pointer;
+    display: flex;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.06em;
 }
 .button:hover,
 .button:focus {background-color:(--button-bg-colore);}
@@ -114,8 +102,6 @@ body {
 background-color:var(--primary-bg-color);
 }
 .section-titel {
-  /* background-color: var(--primary-bg-color); */
-/* font-weight: 700; */
   font-size: 14px;
   line-height: calc(16/14);
   letter-spacing: 0.03em;
@@ -123,15 +109,12 @@ background-color:var(--primary-bg-color);
  color: var(--titel-text-color);
 }
 .section-sub-titel {
-/* font-weight: 400; */
-  font-size: 14px;
   line-height: calc(24/14);
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 /* --------Особливості-h2--------- */
 .titel {
-  /* font-weight: 700; */
     font-size: 36px;
     line-height: calc(42/36);
     text-align: center;
@@ -140,7 +123,7 @@ background-color:var(--primary-bg-color);
   }
   /*--------Особливості-h3---------- */
 .section-descroption {
-  /* font-weight: 500; */
+  font-weight: 500;
   font-size: 16px;
   line-height: calc(19/16);
   letter-spacing: 0.03em;
@@ -151,12 +134,14 @@ background-color:var(--primary-bg-color);
   /* font-weight: 400; */
     font-size: 16px;
     line-height: calc(19/16);
-    /* text-align: center; */
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
 }
 
   /* -----------Підвал---------- */
+  .style {
+    font-style: normal;
+  }
   .footer {
       background-color: var(--hero-footer-bg-color);
       width: 1600px;
@@ -166,12 +151,12 @@ background-color:var(--primary-bg-color);
       
   }
   .logo-footer {
-      font-family: 'Releway';
+      font-family: 'Raleway';
       font-style: normal;
       font-weight: 700;
       font-size: 26px;
-      line-height: 31px;
-      letter-spacing: 0, 03em;
+      line-height: calcaa(31/26);
+      letter-spacing: 0.03em;
       color: var(--titel-color);
     }
   
@@ -206,9 +191,30 @@ background-color:var(--primary-bg-color);
 }
   /* ------Кнопка-Фільтр-Портфоліо------*/
 .filter-button {
+  font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(26/16);
+    text-align: center;
+    letter-spacing: 0.03em;
   background-color: var(--primary-bg-color);
   color: var(--titel-text-color);
 }
 .filter-button:hover,
-.filter-button :focus {background-color: var(--accent-color);
-  color: var(--titel-color);}
+.filter-button:focus {background-color: var(--accent-color);
+  color: var(--titel-color);
+}
+.section-list {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: calc(36/18);    
+    letter-spacing: 0.06em;
+    color: var(--titel-text-color)
+  }
+.section-list-text {
+  font-style: normal;
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.03em;
+}  
